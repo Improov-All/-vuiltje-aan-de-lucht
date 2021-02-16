@@ -40,7 +40,7 @@ h1 {
   grid-area: 4/2/5/3;
   justify-self: center;
   align-self: center;
-  min-width: 30em;
+  min-width: 20em;
   max-width: 60vw;
   min-height: 4em;
   max-height: 4vh;
