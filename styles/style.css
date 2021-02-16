@@ -1,0 +1,52 @@
+body {
+  margin: 0px;
+  width: 100%;
+  color: #ED7D31;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+  text-align: center;
+}
+
+/* Bovenste deel ingesteld als grid, met daarin alle items */
+.bovenste_deel {
+  display: grid;
+  background-color: #e8f1f2;
+  height: 50vh;
+  justify-content: center;
+}
+
+/* de svg afbeeldingen */
+#afbeelding_welkom_scherm {
+  margin: auto;
+}
+
+/* Onderste deel ingesteld als grid, met daarin alle items */
+.onderste_deel {
+  display: grid;
+  grid-template-rows: 2fr 2fr 2fr 2fr 1fr 1fr;
+  grid-template-columns: 1fr 4fr 1fr;
+  justify-content: center;
+  background-color: white;
+  height: 50vh;
+}
+
+.welkom_text {
+  grid-area: 2/2/3/3;
+}
+
+#button {
+  grid-area: 4/2/5/3;
+  justify-self: center;
+  align-self: center;
+  min-width: 30em;
+  max-width: 60vw;
+  min-height: 4em;
+  max-height: 4vh;
+  border-radius: 0.5em;
+  background-color: #ED7D31;
+  border-color: #ED7D31;
+  color: white;
+  cursor: pointer;
+}/*# sourceMappingURL=style.css.map */
