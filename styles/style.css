@@ -24,7 +24,7 @@ body {
 .bovenste_deel {
   display: grid;
   justify-content: center;
-  height: 30vh;
+  height: 50vh;
   background-color: #E8F1F2;
 }
 
