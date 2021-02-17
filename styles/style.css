@@ -10,7 +10,7 @@
 --Div voor radials
 --
 */
-body {
+body, html {
   width: 100%;
   height: 100%;
   /* Fallback for browsers that do not support Custom Properties */
@@ -26,7 +26,7 @@ body {
 .bovenste_deel {
   display: grid;
   justify-content: center;
-  height: 45vh;
+  height: 50vh;
   background-color: #E8F1F2;
 }
 
@@ -36,7 +36,7 @@ h1 {
 
 /* de svg afbeeldingen */
 #afbeelding_welkom_scherm {
-  margin: auto;
+  margin: 30px auto;
 }
 
 /* Onderste deel ingesteld als grid, met daarin alle items */
