@@ -1,3 +1,18 @@
+/* Inhoud CCS
+- Kleurenschema
+- body
+- bovenste deel (default: helft) v.d. pagina
+- styling items op bovenste deel: 
+--H1 
+--Afbeelding
+- onderste deel (default: helft) v.d. pagina
+--Tekst op onderste deel 
+--Div voor radials
+--
+*/
+ 
+
+
 // het kleurenschema met SCSS variabelen. 
 $primary_btn_color: #ED7D31;
 $secondary_btn_color: #ED7D31;
@@ -8,7 +23,7 @@ $secondary_txt_color: white;
 $primary_background_color: white;
 $secondary_background_color: #E8F1F2;
 
-
+// instellingen voor de gehele pagina.
 body {
     width: 100%;
     height: 100%;
@@ -51,7 +66,7 @@ h1 {
     padding: 0;
 }
 
-.radials {
+.de_radials {
     grid-area: 3/2/4/3;
     border-style: $primary_btn_color;
     justify-self: center;
@@ -64,7 +79,7 @@ ul {
 }
 
 #button {
-    // hier moet nog wat gebeuren aan het kleurenschema van bootstrap. Lijkt er op dat hiervoor lokale versie van Bootstrap nodig is. Zie: https://getbootstrap.com/docs/5.0/customize/color/Quick fix nu door kleur op primary color te zetten.
+    // hier kan nog wat gebeuren aan het kleurenschema van bootstrap. Lijkt er op dat hiervoor lokale versie van Bootstrap nodig is. Zie: https://getbootstrap.com/docs/5.0/customize/color/Quick fix nu door kleur op primary color te zetten.
     grid-area: 5/2/6/3;
     justify-self: center;
     bottom: 4vh;
@@ -80,6 +95,8 @@ ul {
     cursor: pointer;
 }
 
+
+// Styling van de radials
 input[type='radio'] {
     -webkit-appearance: none;
     width: 20px;
