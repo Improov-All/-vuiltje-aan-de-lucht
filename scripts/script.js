@@ -9,3 +9,18 @@ window.addEventListener('resize', () => {
   let vh = window.innerHeight * 0.01;
   document.documentElement.style.setProperty('--vh', `${vh}px`);
 });
+
+// // script om carousels los van elkaar te laten werken:
+// $(document).ready(function(){
+// 	$('#carousel-1').carousel();
+// 	$('#maatregel_2').carousel();
+// })
+
+
+// het volgende script zorgt er voor dat als je op de knop drukt met functie 'volgende_scherm', het huidige 'main' element wordt verborgen en de volgende wordt getoond. Zo wordt het een single page application, oftewel; geen serververzoeken en laadtijden! 
+function volgende_scherm(){
+  document.getElementById('scherm_1').classList.add('hide');
+  document.getElementById('scherm_2').classList.remove('hide');
+  document.title = 'Vuiltje a.d. Lucht - Start met meten';
+  document.getElementById('scherm_2').classList.add('show');
+ }
