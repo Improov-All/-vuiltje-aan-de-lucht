@@ -45,7 +45,7 @@ body, html{
 }
 
 main {
-    width: 400px;
+    max-width: 400px;
     margin:auto;
 }
 
@@ -55,6 +55,19 @@ main {
     justify-content: center;
     height: 50vh;
     background-color: $secondary_background_color;
+
+    .lange_titel {
+        margin-top: 5%;
+        margin-left: 2%;
+        margin-right: 2%;
+        text-align:center;
+    }
+
+    p {
+        margin-left: 16.7%;
+        margin-right: 16.7%;
+        text-align: justify;
+    }
 }
 
 h1 {
@@ -65,7 +78,7 @@ h1 {
 
 /* de svg afbeeldingen */
 #afbeelding_welkom_scherm {
-    margin: 30px auto;
+    margin: 3rem auto;
 }
 
 
@@ -79,12 +92,47 @@ h1 {
     grid-template-rows: 2rem 4fr 4rem 2rem;
     grid-template-columns: 1fr 4fr 1fr;
     background-color: $primary_background_color;
+
+    .tekst_onderste_deel {
+        grid-area: 2/2/3/3;
+        padding: 0;
+    }
 }
 
-.tekst_onderste_deel {
-    grid-area: 2/2/3/3;
-    padding: 0;
+.onderste_deel_twee_colommen_naast_elkaar {
+    display: grid;
+    justify-content: center;
+    height: 50vh;
+    grid-template-rows: 2rem 5fr 3fr 4rem 2rem;
+    grid-template-columns: 16.7% 3fr 1fr 3fr 16.7%;
+    background-color: $primary_background_color;
+
+    .text_onderste_deel_kolommen {
+        grid-area: 2/2/3/5;
+        padding: 0;
+    }
+
+    .afbeelding1_onderste_deel {
+        grid-area: 3/2/4/3;
+        margin-top: 1.5rem;
+    }
+
+    .afbeelding2_onderste_deel {
+        grid-area: 3/4/4/5;
+    }
+
+    #knop1_onderste_deel {
+        grid-area: 4/2/5/3;
+    }
+
+    #knop2_onderste_deel {
+        grid-area: 4/4/5/5;
+    }
 }
+
+
+
+
 
 .de_radials {
     grid-area: 2/2/3/3;

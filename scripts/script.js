@@ -10,17 +10,48 @@ window.addEventListener('resize', () => {
   document.documentElement.style.setProperty('--vh', `${vh}px`);
 });
 
-// // script om carousels los van elkaar te laten werken:
-// $(document).ready(function(){
-// 	$('#carousel-1').carousel();
-// 	$('#maatregel_2').carousel();
-// })
-
-
 // het volgende script zorgt er voor dat als je op de knop drukt met functie 'volgende_scherm', het huidige 'main' element wordt verborgen en de volgende wordt getoond. Zo wordt het een single page application, oftewel; geen serververzoeken en laadtijden! 
-function volgende_scherm(){
+function scherm_1_naar_2(){
   document.getElementById('scherm_1').classList.add('hide');
   document.getElementById('scherm_2').classList.remove('hide');
   document.title = 'Vuiltje a.d. Lucht - Start met meten';
   document.getElementById('scherm_2').classList.add('show');
  }
+
+ function scherm_2_naar_3(){
+  document.getElementById('scherm_2').classList.remove('show');
+  document.getElementById('scherm_2').classList.add('hide');
+  document.getElementById('scherm_3').classList.remove('hide');
+  document.title = 'Vuiltje a.d. Lucht - Meetwaarden';
+  document.getElementById('scherm_3').classList.add('show');
+ }
+
+ function scherm_3_naar_4(){
+  document.getElementById('scherm_3').classList.remove('show');
+  document.getElementById('scherm_3').classList.add('hide');
+  document.getElementById('scherm_4').classList.remove('hide');
+  document.title = 'Vuiltje a.d. Lucht - Wil je meer info of direct naar oplossingen?';
+  document.getElementById('scherm_4').classList.add('show');
+ }
+
+ function scherm_4_naar_5(){
+  document.getElementById('scherm_4').classList.remove('show');
+  document.getElementById('scherm_4').classList.add('hide');
+  document.getElementById('scherm_5').classList.remove('hide');
+  document.title = 'Vuiltje a.d. Lucht - Wat voor installatie heb je?';
+  document.getElementById('scherm_5').classList.add('show');
+ }
+
+ function scherm_5_naar_6(){
+  document.getElementById('scherm_5').classList.remove('show');
+  document.getElementById('scherm_5').classList.add('hide');
+  document.getElementById('scherm_6').classList.remove('hide');
+  document.title = 'Vuiltje a.d. Lucht - Oplossingen';
+  document.getElementById('scherm_6').classList.add('show');
+ }
+
+
+// Bootstrap tooltips inschakelen: 
+$(function () {
+  $('[data-toggle="tooltip"]').tooltip()
+})

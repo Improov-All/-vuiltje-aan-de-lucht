@@ -43,6 +43,17 @@ main {
   height: 50vh;
   background-color: #E8F1F2;
 }
+.bovenste_deel .lange_titel {
+  margin-top: 5%;
+  margin-left: 2%;
+  margin-right: 2%;
+  text-align: center;
+}
+.bovenste_deel p {
+  margin-left: 16.7%;
+  margin-right: 16.7%;
+  text-align: justify;
+}
 
 h1 {
   margin: 20px auto;
@@ -50,7 +61,7 @@ h1 {
 
 /* de svg afbeeldingen */
 #afbeelding_welkom_scherm {
-  margin: 30px auto;
+  margin: 3rem auto;
 }
 
 /* Onderste deel ingesteld als grid, met daarin alle items */
@@ -62,10 +73,35 @@ h1 {
   grid-template-columns: 1fr 4fr 1fr;
   background-color: white;
 }
-
-.tekst_onderste_deel {
+.onderste_deel .tekst_onderste_deel {
   grid-area: 2/2/3/3;
   padding: 0;
+}
+
+.onderste_deel_twee_colommen_naast_elkaar {
+  display: grid;
+  justify-content: center;
+  height: 50vh;
+  grid-template-rows: 2rem 5fr 3fr 4rem 2rem;
+  grid-template-columns: 16.7% 3fr 1fr 3fr 16.7%;
+  background-color: white;
+}
+.onderste_deel_twee_colommen_naast_elkaar .text_onderste_deel_kolommen {
+  grid-area: 2/2/3/5;
+  padding: 0;
+}
+.onderste_deel_twee_colommen_naast_elkaar .afbeelding1_onderste_deel {
+  grid-area: 3/2/4/3;
+  margin-top: 1.5rem;
+}
+.onderste_deel_twee_colommen_naast_elkaar .afbeelding2_onderste_deel {
+  grid-area: 3/4/4/5;
+}
+.onderste_deel_twee_colommen_naast_elkaar #knop1_onderste_deel {
+  grid-area: 4/2/5/3;
+}
+.onderste_deel_twee_colommen_naast_elkaar #knop2_onderste_deel {
+  grid-area: 4/4/5/5;
 }
 
 .de_radials {
