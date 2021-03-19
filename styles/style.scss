@@ -23,14 +23,6 @@ $secondary_txt_color: white;
 $primary_background_color: white;
 $secondary_background_color: #E8F1F2;
 
-.hide{
-    display:none;
-    }
-    
-    .show{
-    display:block;
-    }
-
 // instellingen voor de gehele pagina.
 body, html{
     width: 100%;
@@ -49,6 +41,19 @@ main {
     margin:auto;
 }
 
+
+// classes voor Single Page Applicatie, met JS worden deze toegevoegd/verwijderd aan/van pagina's. 
+.hide{
+    display:none;
+    }
+    
+.show{
+    display:block;
+    }
+
+
+
+
  /* Bovenste deel ingesteld als grid, met daarin alle items */
 .bovenste_deel {
     display: grid;
@@ -63,6 +68,10 @@ main {
         text-align:center;
     }
 
+    h1 {
+        margin: 20px auto;
+    }
+
     p {
         margin-left: 16.7%;
         margin-right: 16.7%;
@@ -70,9 +79,6 @@ main {
     }
 }
 
-h1 {
-    margin: 20px auto;
-}
 
 
 
@@ -99,7 +105,9 @@ h1 {
     }
 }
 
-.onderste_deel_twee_colommen_naast_elkaar {
+
+/* Onderste deel versie 2. Ook ingesteld als grid, met daarin alle items in twee kolommen */
+.onderste_deel_twee_kolommen_naast_elkaar {
     display: grid;
     justify-content: center;
     height: 50vh;
@@ -134,6 +142,7 @@ h1 {
 
 
 
+// RADIO knoppen weergave
 .de_radials {
     grid-area: 2/2/3/3;
     border-style: $primary_btn_color;
@@ -152,8 +161,7 @@ ul {
     width: 100%;
 }
 
-
-// Styling van de radials
+// Styling van de radio knoppen
 input[type='radio'] {
     -webkit-appearance: none;
     width: 20px;
@@ -193,26 +201,24 @@ input[type="radio"]:checked {
 
 
 
-
+//
 //6 - CAROUSEL STYLING 
-
+//
 // styling voor navigatiebalk(en)
 
-nav {
+header {
     position: sticky;
     top: 0;
     width: 100%;
     z-index: 1;
     background-color: white;
+    display: flex;
+    justify-content: center;
+    background-color: white;
+    box-shadow: 0px 3px 3px -3px gray;
+    padding-top: 15px;
+    margin-bottom: 3px;
 
-    .topbar {
-        display: flex;
-        justify-content: center;
-        background-color: white;
-        box-shadow: 0px 3px 3px -3px gray;
-        padding-top: 15px;
-        margin-bottom: 3px;
-    
         .tekst_vuiltje_aan {
             margin-left: 0px;
         }
@@ -224,21 +230,17 @@ nav {
         .tekst_de_lucht {
             margin-right: 10%
         }
-    }
-
-    .secondbar {
+}    
+    
+    .second_bar {
+        display: flex;
+        justify-content:space-between;
+        align-content:center;
+        max-width: 400px;
+        min-width: 300px;
         background-color: #F8F8F8;
         padding-top: 5px;
         height: 40px;
-    
-        .knoppen_container {
-            display: flex;
-            justify-content:space-between;
-            align-content:center;
-            max-width: 400px;
-            min-width: 300px;
-            
-        }
 
         .knop1, .knop2 {
             width: 50%;
@@ -256,8 +258,8 @@ nav {
             box-shadow: 0px 2px 2px -2px gray;
         }
     }
+    
 
-}
 
 
 // bol in CSS met radar-animatie

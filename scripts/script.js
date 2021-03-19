@@ -46,9 +46,27 @@ function scherm_1_naar_2(){
   document.getElementById('scherm_5').classList.remove('show');
   document.getElementById('scherm_5').classList.add('hide');
   document.getElementById('scherm_6').classList.remove('hide');
-  document.title = 'Vuiltje a.d. Lucht - Oplossingen';
+  document.title = 'Vuiltje a.d. Lucht - Handelingen';
   document.getElementById('scherm_6').classList.add('show');
  }
+
+ function scherm_6_naar_7(){
+  document.getElementById('scherm_6').classList.remove('show');
+  document.getElementById('scherm_6').classList.add('hide');
+  document.getElementById('scherm_7').classList.remove('hide');
+  document.title = 'Vuiltje a.d. Lucht - Installaties';
+  document.getElementById('scherm_7').classList.add('show');
+ }
+
+ function scherm_7_naar_6(){
+  document.getElementById('scherm_7').classList.remove('show');
+  document.getElementById('scherm_7').classList.add('hide');
+  document.getElementById('scherm_6').classList.remove('hide');
+  document.title = 'Vuiltje a.d. Lucht - Handelingen';
+  document.getElementById('scherm_6').classList.add('show');
+ }
+
+
 
 
 // Bootstrap tooltips inschakelen: 
