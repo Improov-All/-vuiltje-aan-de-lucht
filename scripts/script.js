@@ -26,6 +26,37 @@ function scherm_1_naar_2(){
   document.getElementById('scherm_3').classList.add('show');
  }
 
+// functie om te checken of een optie geselecteerd is. 
+// Als niet: Weergave tooltip. 
+// Als wel: opslaan keuze & doorgaan naar volgende scherm.
+// const btn = document.querySelector('#button_situatie');
+//         // handle click button
+//         btn.onclick = function () {
+//             const rbs = document.querySelectorAll('input[name="situatie"]');
+//             let selectedValue;
+//             for (const rb of rbs) {
+//                 if (rb.checked) {
+//                     selectedValue = rb.value;
+//                     break;
+//                 }
+//                 // else alert("Selecteer een optie")
+//                 // break;
+//             }
+//             if (selectedValue == "Hoge_Co2") {
+//             scherm_3_naar_4();
+//             document.getElementById('maatregel_luchtreiniger').classList.add('hide');
+//             }
+//             else scherm_3_naar_4();
+//         };
+
+function resetAll(){
+  document.getElementById('maatregel_luchtreiniger').classList.remove('hide');
+  }
+
+function hideLuchtreiniger(){
+ document.getElementById('maatregel_luchtreiniger').classList.add('hide');
+}
+
  function scherm_3_naar_4(){
   document.getElementById('scherm_3').classList.remove('show');
   document.getElementById('scherm_3').classList.add('hide');

@@ -68,13 +68,14 @@ main {
   display: grid;
   justify-content: center;
   height: 50vh;
-  grid-template-rows: 2rem 4fr 4rem 2rem;
+  grid-template-rows: 1rem 4fr 4rem 2rem;
   grid-template-columns: 1fr 4fr 1fr;
   background-color: white;
 }
 .onderste_deel .tekst_onderste_deel {
   grid-area: 2/2/3/3;
   padding: 0;
+  text-align: justify;
 }
 
 /* Onderste deel versie 2. Ook ingesteld als grid, met daarin alle items in twee kolommen */
@@ -82,7 +83,7 @@ main {
   display: grid;
   justify-content: center;
   height: 50vh;
-  grid-template-rows: 2rem 5fr 3fr 4rem 2rem;
+  grid-template-rows: 1rem 3fr 3fr 4rem 2rem;
   grid-template-columns: 16.7% 3fr 1fr 3fr 16.7%;
   background-color: white;
 }
@@ -113,10 +114,9 @@ main {
 ul {
   list-style-position: inside;
   padding-left: 0;
-  line-height: 1.5em;
 }
 
-#button {
+#button, #button_situatie {
   grid-area: 3/2/4/3;
   justify-self: center;
   width: 100%;
@@ -124,6 +124,7 @@ ul {
 
 input[type=radio] {
   -webkit-appearance: none;
+  margin-top: 3px;
   width: 20px;
   height: 20px;
   border-radius: 50%;
